@@ -103,7 +103,7 @@ export function FormSheet({
     console.log("result", result);
     if (result.status === 200) {
       setIsLoading(false);
-      // setCurrentStep(currentStep + 1);
+      setCurrentStep(currentStep + 1);
       return toast.success("Formulário enviado com sucesso!");
     } else {
       setIsLoading(false);
